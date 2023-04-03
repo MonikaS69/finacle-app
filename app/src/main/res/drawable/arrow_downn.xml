@@ -1,0 +1,3 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/arrow_down" android:gravity="center_vertical|end" />
+</layer-list>

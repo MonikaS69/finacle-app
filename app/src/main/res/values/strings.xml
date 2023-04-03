@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TheBestAppInTheWorld</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_loginn">LoginnActivity</string>
+
+    <!--    Record-->
+    <string-array name="days">
+        <item>Last 7 Days</item>
+        <item>Last 30 Days</item>
+        <item>Last 12 Weeks</item>
+        <item>Last 6 Months</item>
+        <item>Last 1 Years</item>
+    </string-array>
+
+    <!--    Category-->
+    <string-array name="category">
+        <item>Food, Drinks</item>
+        <item>Shopping</item>
+        <item>Housing</item>
+        <item>Transportation</item>
+        <item>Life, Entertainment</item>
+        <item>Communication, PC</item>
+        <item>Finance expenses</item>
+        <item>Income</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

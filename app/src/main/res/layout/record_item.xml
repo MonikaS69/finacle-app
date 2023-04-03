@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recordImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/transportation"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/recordIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            app:srcCompat="@drawable/transportation" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/recordTitle"
+        android:layout_marginLeft="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recordName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:text="Transportation" />
+
+        <TextView
+            android:id="@+id/recordSubName"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="13dp"
+            android:layout_height="wrap_content"
+            android:text="Cash" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recordAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:gravity="right"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="127.000đ" />
+
+        <TextView
+            android:id="@+id/recordDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="right"
+            android:text="Today" />
+    </LinearLayout>
+
+</LinearLayout>
