@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.example.thebestappintheworld.R
-import com.example.thebestappintheworld.databinding.FragmentRecordBinding
 import com.example.thebestappintheworld.databinding.FragmentStatisticBinding
 
 class StatisticFragment : Fragment() {

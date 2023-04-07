@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.thebestappintheworld.R
@@ -27,8 +28,9 @@ class DashBoardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentDashBoardBinding.inflate(inflater, container, false)
-        binding.recordShowBtn.setOnClickListener {
-            viewRecordDetail()
+        binding.recordShowBtn.setOnClickListener{
+//            Toast.makeText(requireContext(), "Clicked", Toast.LENGTH_LONG).show()
+            findNavController().navigate(R.id.action_dashBoardFragment_to_recordFragment)
         }
         binding.showCardContain.setOnClickListener {
             val intent = Intent(requireContext(), WalletActivity::class.java)
@@ -104,23 +106,11 @@ class DashBoardFragment : Fragment() {
         return binding.root
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            DashBoardFragment().apply {
-                arguments = Bundle().apply {
 
-                }
-            }
-    }
-
-    private fun viewRecordDetail() {
-//        findNavController().navigate(R.id.action_dashBoardFragment_to_recordFragment3)
-        Toast.makeText(requireContext(), "View All has been clicked", Toast.LENGTH_LONG).show()
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
+

@@ -2,18 +2,17 @@ package com.example.thebestappintheworld.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.thebestappintheworld.adapter.CardAdapter
-import com.example.thebestappintheworld.databinding.FragmentWalletBinding
+import com.example.thebestappintheworld.databinding.ActivityWalletBinding
 import com.example.thebestappintheworld.model.CardModel
 
 class WalletActivity : AppCompatActivity() {
-    private lateinit var binding: FragmentWalletBinding
+    private lateinit var binding: ActivityWalletBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = FragmentWalletBinding.inflate(layoutInflater)
+        binding = ActivityWalletBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val ds = mutableListOf<CardModel>()

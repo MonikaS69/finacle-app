@@ -32,10 +32,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:textSize="10dp"
-                android:fontFamily="@font/rubik"
+                android:fontFamily="@font/quicksand_bold"
                 android:text="Transportation"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="10dp" />
 
         </LinearLayout>
 

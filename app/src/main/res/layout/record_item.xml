@@ -59,9 +59,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/rubik"
             android:gravity="right"
-            android:textSize="16dp"
+            android:text="127.000đ"
             android:textColor="@color/black"
-            android:text="127.000đ" />
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/recordDate"

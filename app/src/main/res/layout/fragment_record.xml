@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +9,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/main"
@@ -38,9 +42,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/rubik_medium"
+                        android:text="Records"
                         android:textColor="@color/black"
                         android:textSize="24dp"
-                        android:text="Records"
                         tools:text="Records" />
 
                     <TextView
@@ -50,8 +54,8 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/quicksand_medium"
                         android:paddingTop="2dp"
-                        android:textSize="16dp"
                         android:text="Money transaction"
+                        android:textSize="16dp"
                         tools:text="Money transaction" />
 
                 </LinearLayout>
@@ -82,21 +86,22 @@
 
                 <Spinner
                     android:id="@+id/recordSpinner"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/spinner_item"
-                    android:textColor="#A3F287"
+                    android:layout_weight="1"
+
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/rubik_medium"
-                    android:layout_weight="1" />
+                    android:textColor="#A3F287"
+                    tools:listitem="@layout/spinner_item" />
 
                 <TextView
                     android:id="@+id/recordTotal"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.8"
-                    android:gravity="right"
                     android:fontFamily="@font/quicksand_medium"
+                    android:gravity="right"
                     android:text="Σ -2.246.544đ" />
             </LinearLayout>
 
@@ -116,4 +121,4 @@
     </ScrollView>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
