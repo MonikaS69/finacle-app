@@ -28,10 +28,7 @@ class DashBoardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentDashBoardBinding.inflate(inflater, container, false)
-        binding.recordShowBtn.setOnClickListener{
-//            Toast.makeText(requireContext(), "Clicked", Toast.LENGTH_LONG).show()
-            findNavController().navigate(R.id.action_dashBoardFragment_to_recordFragment)
-        }
+
         binding.showCardContain.setOnClickListener {
             val intent = Intent(requireContext(), WalletActivity::class.java)
             startActivity(intent)
